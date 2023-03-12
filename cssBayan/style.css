@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+}
+body {
+    background-color: #b4a284;
+    color:  #000000;
+}
+h1{
+    text-align: left;
+}
+.wrapper {
+    max-width: 50%;
+    margin: 5vh auto 0;
+}
+.content-bany{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.tab-btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#a2a595;
+    padding: 1.2rem;
+    padding-left: 0;
+}
+.switch {
+    width: 1.5vw;
+    height: 1.5vh;
+    margin-right: 1.3rem;
+    transition: all 0.5s;
+}
+.tab-img {
+    width: 0;
+    height: 0;
+    transition: all 0.7s;
+}
+.tab-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:#ffffff;
+    transition: all 0.5s;
+}
+.tab {
+    background-color: #ffffff;;
+}
+.label-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-input:checked~label .tab-img,
+.tab:focus .tab-img
+{
+    width: 50%;
+    height: 50%;
+    padding: 1.2rem 0;
+}
+
+.content-bany:focus .switch {
+    background: url('./image/иконка.png') center/cover no-repeat;
+}
+
+
+.tab-img:focus {
+    transform: rotate(360deg);
+}
+.tab-input:checked~label .switch,
+.tab:focus .switch {
+    transform: rotate(-45deg);
+}
+.tab-input:checked~label .tab-title,
+.content-bany:focus .tab-title {
+    color:#000000;
+}
+.tab,
+.tab-btm,
+.tab-img {
+    cursor: pointer;
+}
+
+
+
+
