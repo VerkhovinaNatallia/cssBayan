@@ -1,0 +1,55 @@
+
+@media screen and (min-width: 320px) {
+    .wrapper {
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 0.7rem;
+    }
+
+    .tab-title {
+        font-size: 0.4rem;
+    }
+}
+@media screen and (min-width: 820px) {
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .tab-title {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .tab-title {
+        font-size: 1.8rem;
+    }
+}
+@media (hover: hover) {
+    .content-bany:hover .tab-title{
+        color:#000000;
+    }
+    .tab:hover .switch{
+        transform: rotate(-45deg);
+    }
+    .tab-img:hover {
+        transform: rotate(360deg);
+    }
+    .content-bany:hover .switch{
+        background: url('./image/иконка.png') center/cover no-repeat;
+    }
+    .tab:hover .tab-img
+    {
+        width: 50%;
+        height: 50%;
+        padding: 1.2rem 0;
+    }
+}
